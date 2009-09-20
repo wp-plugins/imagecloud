@@ -29,7 +29,7 @@ To control the image creation a few extra options are provided that may be provi
 
 == Installation ==
 
-Installation of Text2Tag is straightforward:
+Installation of ImageCloud is straightforward:
 
 1. Extract the zip-file in your plugins directory (typically '/wp-content/plugins/'). Or through the automatic install functions of WordPress.
 1. Activate the plugin through the 'Plugins' menu in WordPress
@@ -37,9 +37,6 @@ Installation of Text2Tag is straightforward:
 After installation make sure you adapt your theme to use the image format as argument to `wp_tag_cloud`. Or use the [imagecloud] shortcode anywhere in a page or post.
 
 Make sure you have proper tags on your post. One way to add these is by deriving them from the texts in your blog, for example by using the [Text2Tag](http://wordpress.org/extend/plugins/text2tag/ "Text2Tag Wordpress Plugin").
-Titles are optional, naturally.
- plugin.
-
 
 == Frequently Asked Questions == 
 
@@ -57,7 +54,7 @@ The current version has no specific option-page to do so. Clouds are regenerated
 1. The cache is empty. You can clear the cache by removing all files from the cache directory (inside the imagecloud directory in your plugins directory).
 
 = What is the algorithm you use? =
-Regrettably, the Wordle algorithms are not made public. Therefore I had to create one myself. The algorithm used is pretty straightforward. Images are rotated based by chance based on the percentup variable. All images are then positioned one by one around the center of the cloud. There is some randomness in the positioning as I've learned that this will actually improve the layout of the cloud.
+Regrettably, the [Wordle](http://www.wordle.net "Wordle")  algorithms are not made public. Therefore I had to create one myself. The algorithm used is pretty straightforward. Images are rotated based by chance based on the percentup variable. All images are then positioned one by one around the center of the cloud. There is some randomness in the positioning as I've learned that this will actually improve the layout of the cloud.
 
 This algorithm is very simple and improvements can definitly be made! Any suggestion is welcome...
 
