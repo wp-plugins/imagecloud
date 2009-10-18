@@ -154,7 +154,7 @@ class ic_Word extends ic_Box implements IteratorAggregate
 		}
 		
 		//get image html info
-		$url = plugin_dir_url(dirname(__FILE__)."../") . "cache/" . urlencode($cachefile);
+		$url = plugin_dir_url(dirname(__FILE__)."../") . "cache/" . rawurlencode($cachefile);
 		$height = $this->height;
 		$width = $this->width;
 		$top = $this->ul->y;
