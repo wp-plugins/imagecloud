@@ -136,6 +136,12 @@
 			}
 			else
 			{
+				//give extra time (up to 5 minutes) for layout and image generation 
+				$timeLimit = 5*60;
+				$currentLimit = ini_get('max_execution_time');
+				if($currentLimit!=0 && $currentLimit<$timeLimit)
+					set_time_limit($timeLimit);
+				
 				//make sure cloud has been layout properly
 				$this->layout();
 				$this->moveTo(new ic_Point(0,0));

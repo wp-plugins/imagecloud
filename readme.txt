@@ -2,9 +2,9 @@
 
 Contributors: reuzel
 Tags: tag, tagcloud, image
-Requires at least: 2.7?
+Requires at least: 2.7?, PHP5
 Tested up to: 2.8.4
-Stable tag: 1.1
+Stable tag: 1.2
 
 This plugin adds a new format to the `wp_tag_cloud` function, allowing for image based -- Wordle-like -- tag clouds.
 
@@ -63,6 +63,10 @@ This algorithm is very simple and improvements can definitly be made! Any sugges
 1. This screenshot shows an example cloud. This cloud is generated using the following shortcode: `[imagecloud bgcolor="000000" fgcolor="171512" fgcolor2="A6937F" smallest=8 largest=50 percentup=40 maxWidth="450"]`
 
 == Changelog ==
+
+= 1.2 =
+* fixed another issue with query encoding. Spaces are better supported now. 
+* Increases PHP timeout to 5 minutes (if necessary) to give the plugin more time for layout and image generation.
 
 = 1.1 =
 * fixed query encoding bug. Special chars in words are now better supported.
